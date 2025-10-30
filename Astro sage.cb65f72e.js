@@ -17535,6 +17535,29 @@ const Header = ()=>{
                                             fileName: "src/components/Header.js",
                                             lineNumber: 24,
                                             columnNumber: 13
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "headicon",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                    className: "ri-question-line"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Header.js",
+                                                    lineNumber: 25,
+                                                    columnNumber: 39
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                    className: "ri-more-2-fill"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Header.js",
+                                                    lineNumber: 26,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Header.js",
+                                            lineNumber: 25,
+                                            columnNumber: 13
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
@@ -17548,12 +17571,12 @@ const Header = ()=>{
                                         children: "Login"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 26,
+                                        lineNumber: 29,
                                         columnNumber: 36
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 26,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -17562,12 +17585,12 @@ const Header = ()=>{
                                         children: "Signup"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 27,
+                                        lineNumber: 30,
                                         columnNumber: 36
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 27,
+                                    lineNumber: 30,
                                     columnNumber: 13
                                 }, undefined)
                             ]
@@ -19944,7 +19967,7 @@ const Lagna = ()=>{
             id: 39,
             house: 1,
             planets: [
-                "l"
+                ""
             ]
         },
         {
@@ -20085,7 +20108,7 @@ const Lagna = ()=>{
         }, undefined)
     }, void 0, false);
 };
-_s(Lagna, "mil0wAOCeFJWu/EZbYmQ9GXvw1M=");
+_s(Lagna, "mYCEyAI2pdJ6uqBw6xcvzTAu86Q=");
 _c = Lagna;
 exports.default = Lagna;
 var _c;

@@ -47,8 +47,8 @@ body {
 .right-nav {
   flex-shrink: 0;
   align-items: center;
-  gap: 30px;
-  padding-right: 50px;
+  gap: 20px;
+  padding-right: 20px;
   display: flex;
 }
 
@@ -113,6 +113,15 @@ button > h5 {
 .arrowbutton i {
   color: #000;
   font-size: 20px;
+}
+
+.headicon {
+  gap: 15px;
+  display: flex;
+}
+
+.headicon i {
+  font-size: 22px;
 }
 
 .middleheader {
@@ -461,6 +470,10 @@ button > h5 {
   background-color: #ffff004d;
 }
 
+.house-planeth1 span, .house-planeth2 span, .house-planeth3 span, .house-planeth4 span, .house-planeth5 span, .house-planeth6 span, .house-planeth7 span, .house-planeth8 span, .house-planeth9 span, .house-planeth10 span, .house-planeth11 span, .house-planeth12 span {
+  color: #f0f8ff;
+}
+
 .bottompart {
   align-items: center;
   width: 90%;
@@ -510,6 +523,7 @@ button > h5 {
   }
 
   .btns .mobbutton {
+    justify-content: space-between;
     display: flex;
   }
 
