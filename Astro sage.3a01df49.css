@@ -40,21 +40,20 @@ body {
 .left-nav img {
   background-color: #f0f8ff;
   border-radius: 50%;
-  width: 4vmax;
-  height: 4vmax;
+  width: 3rem;
+  height: 3rem;
 }
 
 .right-nav {
   flex-shrink: 0;
   align-items: center;
-  gap: 25%;
-  width: 28vw;
+  gap: 30px;
   padding-right: 50px;
   display: flex;
 }
 
 .navtext {
-  gap: 40px;
+  gap: 25px;
   display: flex;
 }
 
@@ -70,11 +69,12 @@ h5 {
 
 button {
   white-space: nowrap;
+  cursor: pointer;
   background-color: gold;
   border: none;
   border-radius: 10px;
   align-items: center;
-  width: 74px;
+  width: 80px;
   height: 35px;
 }
 
@@ -118,11 +118,10 @@ button > h5 {
 .middleheader {
   z-index: 999;
   flex-direction: column;
-  width: 100vmax;
-  height: 7vmax;
+  width: 100%;
   display: flex;
   position: fixed;
-  top: 13vh;
+  top: 12vh;
   left: 0;
 }
 
@@ -132,12 +131,14 @@ button > h5 {
   align-items: center;
   width: 100%;
   height: 55%;
+  padding: 10px;
   display: flex;
 }
 
 .text-content h3 {
   color: #888f94;
   font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .seachbox {
@@ -145,7 +146,6 @@ button > h5 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 45%;
   display: flex;
 }
 
@@ -154,8 +154,8 @@ button > h5 {
   border: 1px solid;
   border-radius: 20px;
   width: 80%;
-  height: 90%;
-  padding: 10px;
+  height: 40px;
+  padding: 10px 15px;
   font-size: .9em;
 }
 
@@ -165,23 +165,23 @@ button > h5 {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  width: 3.5vmax;
-  height: 3.2vmax;
+  width: 45px;
+  height: 45px;
   margin-left: 1%;
   display: flex;
 }
 
 .favicon i {
   color: #000;
-  font-size: 2em;
+  font-size: 22px;
 }
 
 .lagna {
   z-index: -1;
   border: 2px solid gold;
-  width: 30vmax;
-  height: 30vmax;
-  margin: 18vw auto 0;
+  width: 32vmax;
+  height: 32vmax;
+  margin: 15vw auto 10vh;
   overflow: hidden;
 }
 
@@ -189,8 +189,8 @@ button > h5 {
   clip-path: inset(0 8% 8% 0);
   background: #000;
   border: 1px solid gold;
-  width: 32.3vmax;
-  height: 32.2vmax;
+  width: 34.3vmax;
+  height: 34.5vmax;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -463,8 +463,11 @@ button > h5 {
 
 .bottompart {
   align-items: center;
-  width: 100vmax;
+  width: 90%;
+  max-width: 1500px;
   height: 10vmax;
+  margin: 0 auto;
+  padding-bottom: 1vh;
   display: flex;
 }
 
@@ -472,40 +475,36 @@ button > h5 {
   background-color: oklch(26.9% 0 0);
   flex-wrap: wrap;
   align-items: start;
-  width: 30%;
-  height: 80%;
+  max-width: 700px;
+  padding: 18px;
   font-family: sans-serif;
   display: flex;
 }
 
 .h4text h4 {
-  padding: 10px;
+  padding-bottom: 15px;
 }
 
 .info {
   border: 1px solid #fff;
   flex-wrap: wrap;
-  gap: 7%;
-  width: 65%;
-  height: 80%;
+  flex: 2;
+  justify-content: start;
+  gap: 10px;
   margin-left: 2%;
-  padding: 1%;
+  padding: 15px;
   display: flex;
-  position: relative;
 }
 
 .bottompart .info button {
   background-color: #222;
   border: none;
-  width: 14%;
-  padding: 5px;
+  width: 105px;
+  height: 35px;
+  font-size: .9rem;
 }
 
 @media (width <= 600px) {
-  .navbar {
-    padding: 2%;
-  }
-
   .navtext {
     display: none;
   }
@@ -515,7 +514,6 @@ button > h5 {
   }
 
   .middleheader {
-    height: 10vmax;
     top: 10vh;
   }
 
@@ -523,29 +521,39 @@ button > h5 {
     display: none;
   }
 
+  .text-content {
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    overflow-x: auto;
+  }
+
   .lagna {
-    width: 53vmax;
-    height: 53vmax;
-    margin-top: 50%;
-    margin-left: 50%;
+    width: 90vmin;
+    height: 90vmin;
+    margin-top: 25vh;
+    margin-bottom: 5vh;
   }
 
   .lagnachart {
-    width: 56.9vmax;
-    height: 57vmax;
+    width: 97vmin;
+    height: 97vmin;
   }
 
   .bottompart {
     flex-direction: column;
-    width: 100vmax;
     height: auto;
-    margin-top: 5%;
+  }
+
+  .text-content h3 {
+    padding: 0 15px;
+    font-size: .95rem;
+    display: inline-block;
   }
 
   .h4text {
-    gap: 20px;
-    width: 90%;
-    height: 90%;
+    gap: 10px;
+    width: 95%;
     padding: 2%;
   }
 
@@ -554,23 +562,19 @@ button > h5 {
   }
 
   .info {
-    border: 1px solid #fff;
+    border: none;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 8%;
-    width: 90%;
-    height: 80%;
+    gap: 2%;
+    width: 95%;
     margin-top: 2%;
-    margin-left: 2%;
-    padding: 3%;
-    display: flex;
-    position: relative;
+    margin-left: 1%;
+    padding: 1%;
   }
 
   .bottompart .info button {
-    width: 25%;
-    margin-top: 1%;
+    width: 30%;
+    margin: 1%;
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=Astro sage.3a01df49.css.map */
