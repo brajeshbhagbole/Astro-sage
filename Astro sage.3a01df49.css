@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.navbar {
+  z-index: 1000;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.left-nav {
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  display: flex;
+}
+
+.left-nav h1 {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.left-nav img {
+  background-color: #f0f8ff;
+  border-radius: 50%;
+  width: 4vmax;
+  height: 4vmax;
+}
+
+.right-nav {
+  flex-shrink: 0;
+  align-items: center;
+  gap: 25%;
+  width: 28vw;
+  padding-right: 50px;
+  display: flex;
+}
+
+.navtext {
+  gap: 40px;
+  display: flex;
+}
+
+h5 {
+  height: 19px;
+  font-family: sans-serif;
+}
+
+.btns {
+  gap: 9px;
+  display: flex;
+}
+
+button {
+  white-space: nowrap;
+  background-color: gold;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  width: 74px;
+  height: 35px;
+}
+
+button > h5 {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.btns .mobbutton {
+  align-items: center;
+  gap: 7px;
+  display: none;
+}
+
+.upgrade {
+  white-space: nowrap;
+  background-color: gold;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  width: 78px;
+  height: 32px;
+}
+
+.arrowbutton {
+  white-space: nowrap;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  width: 34px;
+  height: 28px;
+}
+
+.arrowbutton i {
+  color: #000;
+  font-size: 20px;
+}
+
+.middleheader {
+  z-index: 999;
+  flex-direction: column;
+  width: 100vmax;
+  height: 7vmax;
+  display: flex;
+  position: fixed;
+  top: 13vh;
+  left: 0;
+}
+
+.text-content {
+  background-color: #000;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 55%;
+  display: flex;
+}
+
+.text-content h3 {
+  color: #888f94;
+  font-family: sans-serif;
+}
+
+.seachbox {
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  display: flex;
+}
+
+.seachbox input {
+  background-color: oklch(26.9% 0 0);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 80%;
+  height: 90%;
+  padding: 10px;
+  font-size: .9em;
+}
+
+.favicon {
+  white-space: nowrap;
+  background-color: #ff0;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 3.5vmax;
+  height: 3.2vmax;
+  margin-left: 1%;
+  display: flex;
+}
+
+.favicon i {
+  color: #000;
+  font-size: 2em;
+}
+
+.lagna {
+  z-index: -1;
+  border: 2px solid gold;
+  width: 30vmax;
+  height: 30vmax;
+  margin: 18vw auto 0;
+  overflow: hidden;
+}
+
+.lagnachart {
+  clip-path: inset(0 8% 8% 0);
+  background: #000;
+  border: 1px solid gold;
+  width: 32.3vmax;
+  height: 32.2vmax;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.lagnachart:before {
+  content: "";
+  pointer-events: none;
+  z-index: 5;
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+}
+
+.househ1 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: translate(91%, 20%)rotate(-45deg);
+}
+
+.househ1 span {
+  color: gold;
+  padding: 10%;
+  transform: rotate(45deg);
+}
+
+.house-planeth1 {
+  gap: 2vmax;
+  display: flex;
+}
+
+.househ2 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: end;
+  align-items: end;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(45deg)translate(-20.3%, -49.3%);
+}
+
+.househ2 span {
+  color: gold;
+  padding-left: 6px;
+  padding-right: 0;
+  transform: rotate(-45deg)translate(10%, 2.9%);
+}
+
+.house-planeth2 {
+  gap: 2vmax;
+  display: flex;
+}
+
+.househ3 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: end;
+  align-items: end;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(-50%, -20.5%);
+}
+
+.househ3 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ4 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(-49.5%, 79%);
+}
+
+.househ4 span {
+  color: gold;
+  transform: rotate(45deg);
+}
+
+.house-planeth4 {
+  gap: 2vmax;
+  display: flex;
+}
+
+.househ5 {
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: end;
+  align-items: end;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(-148.9%, 78.4%);
+}
+
+.househ5 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ6 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: end;
+  align-items: baseline;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(-149%, 178%);
+}
+
+.househ6 span {
+  color: gold;
+  padding-top: 5px;
+  padding-right: 5px;
+  transform: rotate(45deg);
+}
+
+.househ7 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(-49.7%, 178.1%);
+}
+
+.househ7 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ8 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: end;
+  align-items: baseline;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(-50%, 277.9%);
+}
+
+.househ8 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ9 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(49.9%, 277.9%);
+}
+
+.househ9 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ10 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(49.9%, 178%);
+}
+
+.househ10 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ11 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(149.8%, 176.4%);
+}
+
+.househ11 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ12 {
+  color: gold;
+  text-align: center;
+  background: #222;
+  border: 2px solid gold;
+  justify-self: center;
+  align-items: end;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  position: absolute;
+  transform: rotate(-45deg)translate(150%, 78.4%);
+}
+
+.househ12 span {
+  color: gold;
+  padding-right: 8px;
+  transform: rotate(45deg);
+}
+
+.househ1:hover, .househ2:hover, .househ3:hover, .househ4:hover, .househ5:hover, .househ6:hover, .househ7:hover, .househ8:hover, .househ9:hover, .househ10:hover, .househ11:hover, .househ12:hover {
+  background-color: #ffff004d;
+}
+
+.bottompart {
+  align-items: center;
+  width: 100vmax;
+  height: 10vmax;
+  display: flex;
+}
+
+.h4text {
+  background-color: oklch(26.9% 0 0);
+  flex-wrap: wrap;
+  align-items: start;
+  width: 30%;
+  height: 80%;
+  font-family: sans-serif;
+  display: flex;
+}
+
+.h4text h4 {
+  padding: 10px;
+}
+
+.info {
+  border: 1px solid #fff;
+  flex-wrap: wrap;
+  gap: 7%;
+  width: 65%;
+  height: 80%;
+  margin-left: 2%;
+  padding: 1%;
+  display: flex;
+  position: relative;
+}
+
+.bottompart .info button {
+  background-color: #222;
+  border: none;
+  width: 14%;
+  padding: 5px;
+}
+
+@media (width <= 600px) {
+  .navbar {
+    padding: 2%;
+  }
+
+  .navtext {
+    display: none;
+  }
+
+  .btns .mobbutton {
+    display: flex;
+  }
+
+  .middleheader {
+    height: 10vmax;
+    top: 10vh;
+  }
+
+  .ls {
+    display: none;
+  }
+
+  .lagna {
+    width: 53vmax;
+    height: 53vmax;
+    margin-top: 50%;
+    margin-left: 50%;
+  }
+
+  .lagnachart {
+    width: 56.9vmax;
+    height: 57vmax;
+  }
+
+  .bottompart {
+    flex-direction: column;
+    width: 100vmax;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .h4text {
+    gap: 20px;
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+  }
+
+  .h4text h4 {
+    padding: 2%;
+  }
+
+  .info {
+    border: 1px solid #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    width: 90%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 3%;
+    display: flex;
+    position: relative;
+  }
+
+  .bottompart .info button {
+    width: 25%;
+    margin-top: 1%;
+  }
+}
+/*# sourceMappingURL=Astro sage.3a01df49.css.map */
